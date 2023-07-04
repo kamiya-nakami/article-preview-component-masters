@@ -9,26 +9,26 @@ The designs were created to the following widths:
 
 ## Colors
 
-- Very Dark Grayish Blue: hsl(217, 19%, 35%)
-- Desaturated Dark Blue: hsl(214, 17%, 51%)
-- Grayish Blue: hsl(212, 23%, 69%)
-- Light Grayish Blue: hsl(210, 46%, 95%)
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 13px
+- Font size (paragraph): 15px
 
-### Headings
+### Font
 
-- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-- Weights: 500, 700
-
-## Icons
-
-We provide SVGs for the social icons. But please feel free to use a font icon library if you like. Some suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com)
-- [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com)
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700
+****
