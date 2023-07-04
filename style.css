@@ -1,0 +1,211 @@
+:root {
+    
+--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+--Grayish-Blue: hsl(212, 23%, 69%);
+--Light-Grayish-Blue: hsl(210, 46%, 95%);
+--white: #fff;
+}
+* 
+,*::after
+,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Light-Grayish-Blue);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: var(--very-Dark-Grayish-Blue);
+}
+a :hover{
+    color: var(--Desaturated-Dark-Blue);
+    transition: .3s ease-in-out;
+}
+.button-share {
+    all: unset;
+
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    top: 64%;
+    left: 73%;
+}
+
+.box {
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+    background-color: var(--white);
+    overflow:           hidden;
+    border-radius: .5rem;
+    width: 50rem;
+    height: 20rem;
+}
+.author-img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.container-content {
+    padding: 2rem ;
+}
+
+.content p {
+    margin: 1.5rem 0;
+    color: var(--Grayish-Blue);
+}
+.name {
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+}
+.name-container {
+    display: flex;
+}
+.img-name img {
+    border-radius: 100%;
+    width:         3rem;
+}
+
+.about-michel {
+    display:        flex;
+    flex-direction: column;
+    margin-left:    1.5rem;
+
+}
+.about-michel p {
+    color: var(--Grayish-Blue);
+}
+
+.button-share i{
+    border: .5rem solid var(--Light-Grayish-Blue);
+    background-color: var(--Light-Grayish-Blue);
+    border-radius:  100%;
+    font-size:      1.5rem;
+    margin-left:    5rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.share-icon a:hover{ 
+    filter: invert(1); 
+    transition: all .5s ease-in-out;
+}
+    
+
+.button-share i:hover
+,.button-share.on i  {
+    border-color:   var(--Very-Dark-Grayish-Blue);
+    background:     var(--Very-Dark-Grayish-Blue);
+    color:          var(--Light-Grayish-Blue);
+}
+.share-cover {
+    display: flex;
+    justify-content: space-between;   
+    position:        absolute;
+    visibility:      hidden;
+    transform: translate(114%,-20%);
+    top: 50%;  
+  
+}
+
+
+
+.share-cover.on {
+    width: 14rem;
+    visibility: visible;
+    background: var(--Very-Dark-Grayish-Blue);
+    border:     solid 1.2rem var(--Very-Dark-Grayish-Blue);
+    box-shadow: -25px 25px 17px 0px rgba(0,0,0,0.1);
+    transition: all .9s ease-in-out;
+    border-radius: .5rem;
+} 
+
+.share-cover.on::before{
+    content: "";
+    background-color: var(--Very-Dark-Grayish-Blue);
+    transform:  translate(-80% ,30%)  rotate(45deg);
+    position:   absolute;
+    width:  20px;
+    height: 20px;
+    top:    100%;
+    left:   60%;
+}
+.share-cover span{
+    color:     var(--Grayish-Blue);
+    font-size: 1rem;
+}
+
+.share img {
+    margin-right: .5rem;
+    cursor:       pointer;
+}
+
+@media screen and (max-width: 962px) {
+
+    .box {
+        flex-direction: column;
+        max-width:  50%;
+        height:     auto;
+        margin:     0 auto;
+    }
+    
+    .author-img {width: auto;}
+
+    .name-container {font-size: .7rem;}
+    
+    .about-michel {font-size: 1rem;}
+    
+    .button-share {font-size: 1rem;}
+    
+    .share img {width: 2rem;}
+    
+    .share span {font-size: 2rem;}
+    
+    .share-cover.on::before{all: unset;}
+    
+    .container-content {padding: 1.5rem;}
+    
+    .share-icon {margin-left: 2rem;}
+    
+    .content p {
+        font-size: 1.1rem;
+        margin: 1rem 0;
+    }
+
+    .share-cover.on {
+        width: 25rem;
+        height: 5.5rem;
+        top:    94%;
+        transform: translate(-6% ,-50%);
+        position:        absolute;
+        justify-content: flex-start;
+        align-items:     center;
+    }
+
+    .button-share {
+        transform: translate(-50% ,-50%);
+        top:    94%;
+        left:   70%;
+        z-index: 2;
+    }
+
+    .button-share.on i  {
+        border-color:   var(--Light-Grayish-Blue);
+        background:     var(--Light-Grayish-Blue);
+        color:          var(--Very-Dark-Grayish-Blue);
+    }
+    
+    .button-share i{
+        border: .5rem solid var(--Very-Dark-Grayish-Blue);
+        background-color: var(--Very-Dark-Grayish-Blue);
+    }
+
+
+}
